@@ -8,12 +8,16 @@ source ~/.config/fish/config.fish
 
 # Install fish config stuff
 brew install starship
-rm -rfv ~/.config/*
-mkdir -p ~/.config/fish
+rm -rfv "$HOME"/.config/*
 
-# might just do hardlink?
-# cp -rfv ./config/fish/ ~/.config/fish/
-# cp -rfv ./config/starship/ ~/.config/
+# Make some config directories
+mkdir -p "$HOME"/.config/fish/ "$HOME"/Library/Application\ Support/Code/User/
+
+# Hardlink config files
+ln ./config/fish/config.fish ~/.config/fish/config.fish
+ln ./config/starship/starship.toml ~/.config/starship.toml
+ln ./config/vim/.vimrc ~/.vimrc
+ln ./config/vscode/settings.json "$HOME"/Library/Application\ Support/Code/User/settings.json
 
 # Fisher
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
@@ -27,6 +31,10 @@ fzf_configure_bindings
 brew install lsd colima docker docker-completion docker-compose ffmpeg rclone yt-dlp adguard-vpn adobe-acrobat-reader appcleaner \
     calibre cyberduck font-jetbrains-mono-nerd-font handbrake loopback miniconda musicbrainz-picard onyx raycast rectangle shottr \
     soundsource steermouse xld discord
+
+# docker-compose post-install
+mkdir -p ~/.docker/cli-plugins
+ln -sfn "$HOMEBREW_PREFIX"/opt/docker-compose/bin/docker-compose ~/.docker/cli-plugins/docker-compose
 
 # brew ntfs shenanigans
 brew install --cask macfuse
