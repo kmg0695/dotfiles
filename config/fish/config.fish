@@ -5,7 +5,6 @@ end
 # Starship
 starship init fish | source
 
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 if test -f /opt/homebrew/Caskroom/miniconda/base/bin/conda
@@ -19,3 +18,6 @@ else
 end
 # <<< conda initialize <<<
 
+# volta
+set -gx VOLTA_HOME "$HOME/.volta"
+set -gx PATH "$VOLTA_HOME/bin" $PATH
