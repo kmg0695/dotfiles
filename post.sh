@@ -4,7 +4,7 @@
 
 # add brew path to fish
 fish_add_path /opt/homebrew/bin
-source ~/.config/fish/config.fish
+source "$HOME"/.config/fish/config.fish
 
 # Install fish config stuff
 brew install starship
@@ -14,9 +14,9 @@ rm -rfv "$HOME"/.config/*
 mkdir -p "$HOME"/.config/fish/ "$HOME"/Library/Application\ Support/Code/User/
 
 # Hardlink config files
-ln ./config/fish/config.fish ~/.config/fish/config.fish
-ln ./config/starship/starship.toml ~/.config/starship.toml
-ln ./config/vim/.vimrc ~/.vimrc
+ln ./config/fish/config.fish "$HOME"/.config/fish/config.fish
+ln ./config/starship/starship.toml "$HOME"/.config/starship.toml
+ln ./config/vim/.vimrc "$HOME"/.vimrc
 ln ./config/vscode/settings.json "$HOME"/Library/Application\ Support/Code/User/settings.json
 
 # Fisher
@@ -33,8 +33,8 @@ brew install lsd colima docker docker-completion docker-compose ffmpeg rclone yt
     soundsource steermouse xld discord spotify
 
 # docker-compose post-install
-mkdir -p ~/.docker/cli-plugins
-ln -sfn "$HOMEBREW_PREFIX"/opt/docker-compose/bin/docker-compose ~/.docker/cli-plugins/docker-compose
+mkdir -p "$HOME"/.docker/cli-plugins
+ln -sfn "$HOMEBREW_PREFIX"/opt/docker-compose/bin/docker-compose "$HOME"/.docker/cli-plugins/docker-compose
 
 # brew ntfs shenanigans
 brew install --cask macfuse
@@ -51,8 +51,13 @@ conda init "$(basename "$SHELL")"
 conda config --set auto_activate_base false
 
 # docker compose
-mkdir -p ~/.docker/cli-plugins
-ln -sfn /opt/homebrew/opt/docker-compose/bin/docker-compose ~/.docker/cli-plugins/docker-compose
+mkdir -p "$HOME"/.docker/cli-plugins
+ln -sfn /opt/homebrew/opt/docker-compose/bin/docker-compose "$HOME"/.docker/cli-plugins/docker-compose
+
+# volta
+brew install volta
+volta setup
+volta completions fish > "$HOME"/.config/fish/completions/volta.fish
 
 # Final
 fish_update_completions
