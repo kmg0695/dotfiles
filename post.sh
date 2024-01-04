@@ -30,7 +30,7 @@ fzf_configure_bindings
 # brew CLI utils
 brew install lsd colima docker docker-completion docker-compose ffmpeg rclone yt-dlp adguard-vpn adobe-acrobat-reader appcleaner \
     calibre cyberduck font-jetbrains-mono-nerd-font handbrake loopback miniconda musicbrainz-picard onyx raycast rectangle shottr \
-    soundsource steermouse xld discord
+    soundsource steermouse xld discord spotify
 
 # docker-compose post-install
 mkdir -p ~/.docker/cli-plugins
