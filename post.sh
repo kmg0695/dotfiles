@@ -4,7 +4,7 @@
 
 # add brew path to fish
 fish_add_path /opt/homebrew/bin
-source "$HOME"/.config/fish/config.fish
+# source "$HOME"/.config/fish/config.fish
 
 # Install fish config stuff
 brew install starship
