@@ -46,11 +46,11 @@ alias ls lsd
 alias cat bat
 funcsave ls cat
 
-# Conda 
+# Conda post-install
 conda init "$(basename "$SHELL")"
 conda config --set auto_activate_base false
 
-# docker compose
+# docker compose post-install
 mkdir -p "$HOME"/.docker/cli-plugins
 ln -sfn /opt/homebrew/opt/docker-compose/bin/docker-compose "$HOME"/.docker/cli-plugins/docker-compose
 
