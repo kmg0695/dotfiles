@@ -28,18 +28,16 @@ fisher install PatrickF1/fzf.fish
 fzf_configure_bindings
 
 # brew CLI utils
-brew install lsd colima docker docker-completion docker-compose ffmpeg rclone yt-dlp adguard-vpn adobe-acrobat-reader appcleaner \
-    calibre cyberduck font-jetbrains-mono-nerd-font handbrake loopback miniconda musicbrainz-picard onyx raycast rectangle shottr \
-    soundsource steermouse xld discord spotify
+brew install lsd colima docker docker-completion docker-compose ffmpeg rclone yt-dlp gromgit/fuse/ntfs-3g-mac
+
+# brew cask install
+brew install --cask 1password mullvadvpn 1password-cli musicbrainz-picard adguard-vpn obsidian adobe-acrobat-reader \
+    onyx appcleaner	raycast calibre	rectangle cyberduck	shottr discord soundsource font-jetbrains-mono-nerd-font spotify \
+    loopback steermouse macfuse	visual-studio-code miniconda xld
 
 # docker-compose post-install
 mkdir -p "$HOME"/.docker/cli-plugins
 ln -sfn "$HOMEBREW_PREFIX"/opt/docker-compose/bin/docker-compose "$HOME"/.docker/cli-plugins/docker-compose
-
-# brew ntfs shenanigans
-brew install --cask macfuse
-brew install gromgit/fuse/ntfs-3g-mac
-brew install --cask mounty
 
 # modern unix aliases
 alias ls lsd
