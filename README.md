@@ -5,4 +5,5 @@ This repo contains all the configuration files for setting up my development/dai
 This repo will evolve as I go.
 
 ## TODO
-- SSH Integration
+- [ ] SSH Agent Integration with 1Password
+- [ ] Rewrite Installation scripts
