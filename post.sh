@@ -28,12 +28,12 @@ fisher install PatrickF1/fzf.fish
 fzf_configure_bindings
 
 # brew CLI utils
-brew install lsd colima docker docker-completion docker-compose ffmpeg rclone yt-dlp gromgit/fuse/ntfs-3g-mac
+brew install lsd colima docker docker-completion docker-compose ffmpeg rclone yt-dlp gromgit/fuse/ntfs-3g-mac mise 
 
 # brew cask install
-brew install --cask 1password mullvadvpn 1password-cli musicbrainz-picard adguard-vpn obsidian adobe-acrobat-reader \
-    onyx appcleaner	raycast calibre	rectangle cyberduck	shottr discord soundsource font-jetbrains-mono-nerd-font spotify \
-    loopback steermouse macfuse	visual-studio-code miniconda xld
+brew install --cask 1password 1password-cli adguard-vpn obsidian adobe-acrobat-reader onyx appcleaner \
+    raycast	rectangle cyberduck	shottr discord soundsource font-jetbrains-mono-nerd-font spotify \
+    loopback steermouse macfuse	visual-studio-code miniconda xld handbrake
 
 # docker-compose post-install
 mkdir -p "$HOME"/.docker/cli-plugins
