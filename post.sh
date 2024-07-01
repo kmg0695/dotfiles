@@ -28,21 +28,19 @@ fisher install PatrickF1/fzf.fish
 fzf_configure_bindings
 
 # brew CLI utils
-brew install lsd colima docker docker-completion docker-compose ffmpeg rclone yt-dlp gromgit/fuse/ntfs-3g-mac mise mailsy
+brew install btop colima docker docker-compose ffmpeg fish go gromgit/fuse/ntfs-3g-mac htop lsd mailsy mise neovim r rclone wget yt-dlp
 
 # brew cask install
-brew install --cask 1password 1password-cli adguard-vpn obsidian adobe-acrobat-reader onyx appcleaner \
-    raycast	rectangle cyberduck	shottr discord soundsource font-jetbrains-mono-nerd-font spotify \
-    loopback steermouse macfuse	visual-studio-code miniconda xld handbrake iina zed
+brew install --cask 1password 1password-cli adguard-vpn appcleaner calibre cyberduck discord font-jetbrains-mono-nerd-font google-chrome@dev handbrake iina \
+    knockknock loopback macfuse miniconda mos mounty musicbrainz-picard obsidian onyx raycast rectangle shottr soundsource steermouse visual-studio-code xld
 
 # docker-compose post-install
 mkdir -p "$HOME"/.docker/cli-plugins
 ln -sfn "$HOMEBREW_PREFIX"/opt/docker-compose/bin/docker-compose "$HOME"/.docker/cli-plugins/docker-compose
 
 # modern unix aliases
-alias ls lsd
-alias cat bat
-funcsave ls cat
+alias ls lsd --save
+alias cat bat --save
 
 # Conda post-install
 conda init "$(basename "$SHELL")"
@@ -51,11 +49,6 @@ conda config --set auto_activate_base false
 # docker compose post-install
 mkdir -p "$HOME"/.docker/cli-plugins
 ln -sfn /opt/homebrew/opt/docker-compose/bin/docker-compose "$HOME"/.docker/cli-plugins/docker-compose
-
-# volta
-brew install volta
-volta setup
-volta completions fish > "$HOME"/.config/fish/completions/volta.fish
 
 # Final
 fish_update_completions

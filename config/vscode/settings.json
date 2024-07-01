@@ -8,13 +8,21 @@
     "editor.minimap.enabled": false,
     "prettier.requireConfig": true,
     "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "vsicons.dontShowNewVersionMessage": true,
     "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.fontLigatures": true,
+    "terminal.integrated.inheritEnv": false,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }
