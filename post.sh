@@ -20,10 +20,13 @@ ln ./config/vscode/settings.json "$HOME"/Library/Application\ Support/Code/User/
 # Fisher
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 
-# fzf.fish (Don't forget to set meta in iterm2)
+# fzf.fish (Don't forget to set left option key to Esc+ in iterm2 -> Settings -> Profiles -> Keys)
 brew install fzf fd bat
 fisher install PatrickF1/fzf.fish
 fzf_configure_bindings
+
+# autopair.fish
+fisher install jorgebucaran/autopair.fish
 
 # brew CLI utils
 brew install btop colima docker docker-compose ffmpeg go gromgit/fuse/ntfs-3g-mac hugo lsd mailsy mise neovim r rclone \
