@@ -1,10 +1,5 @@
 #!/bin/sh
 
-# TODO Finish post setup script
-
-# add brew path to fish
-fish_add_path /opt/homebrew/bin
-
 # Install fish config stuff
 brew install starship
 

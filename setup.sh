@@ -1,7 +1,5 @@
 #!/bin/sh
 
-# TODO Finish setup script
-
 # Install xcode tools
 xcode-select --install
 
@@ -16,3 +14,6 @@ defaults write com.apple.Dock showhidden -bool TRUE && killall Dock
 brew install fish
 sudo sh -c echo "$(brew --prefix)/bin/fish >> /etc/shells"
 chsh -s "$(brew --prefix)"/bin/fish
+
+# add brew path to fish
+fish_add_path /opt/homebrew/bin
