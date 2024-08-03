@@ -9,11 +9,12 @@ fish_add_path /opt/homebrew/bin
 brew install starship
 
 # Make some config directories
-mkdir -p "$HOME"/.config/fish/ "$HOME"/Library/Application\ Support/Code/User/
+mkdir -p "$HOME"/.config/fish/ "$HOME"/Library/Application\ Support/Code/User/ "$HOME"/.config/alacritty/
 
 # Hardlink config files
 ln ./config/fish/config.fish "$HOME"/.config/fish/config.fish
 ln ./config/starship/starship.toml "$HOME"/.config/starship.toml
+ln ./config/alacritty/alacritty.toml "$HOME"/.config/alacritty/alacritty.toml
 ln ./config/vim/.vimrc "$HOME"/.vimrc
 ln ./config/vscode/settings.json "$HOME"/Library/Application\ Support/Code/User/settings.json
 
@@ -33,9 +34,12 @@ brew install btop colima docker docker-compose ffmpeg go gromgit/fuse/ntfs-3g-ma
     teamookla/speedtest/speedtest wget yt-dlp zoxide
 
 # brew cask install
-brew install --cask 1password 1password-cli adguard-vpn adobe-acrobat-reader appcleaner calibre cyberduck discord font-jetbrains-mono-nerd-font google-chrome@dev \
-    handbrake iterm2 knockknock loopback macfuse miniconda mos mounty musicbrainz-picard obsidian onyx raycast rectangle shottr soundsource steermouse utm \
-    visual-studio-code vlc vnc-viewer xld zed
+brew install --cask 1password 1password-cli adguard-vpn adobe-acrobat-reader alacritty appcleaner calibre cyberduck discord \
+    font-jetbrains-mono-nerd-font google-chrome@dev handbrake knockknock loopback macfuse miniconda mos mounty musicbrainz-picard \
+    obsidian onyx raycast rectangle shottr soundsource steermouse utm visual-studio-code vlc vnc-viewer xld zed
+
+# catppuccin-mocha
+curl -LO --output-dir "$HOME"/.config/alacritty https://github.com/catppuccin/alacritty/raw/main/catppuccin-mocha.toml
 
 # docker-compose post-install
 mkdir -p "$HOME"/.docker/cli-plugins
