@@ -4,11 +4,9 @@
 
 # add brew path to fish
 fish_add_path /opt/homebrew/bin
-# source "$HOME"/.config/fish/config.fish
 
 # Install fish config stuff
 brew install starship
-rm -rfv "$HOME"/.config/*
 
 # Make some config directories
 mkdir -p "$HOME"/.config/fish/ "$HOME"/Library/Application\ Support/Code/User/
@@ -28,11 +26,13 @@ fisher install PatrickF1/fzf.fish
 fzf_configure_bindings
 
 # brew CLI utils
-brew install btop colima docker docker-compose ffmpeg fish go gromgit/fuse/ntfs-3g-mac htop lsd mailsy mise neovim r rclone wget yt-dlp
+brew install btop colima docker docker-compose ffmpeg go gromgit/fuse/ntfs-3g-mac hugo lsd mailsy mise neovim r rclone \
+    teamookla/speedtest/speedtest wget yt-dlp zoxide
 
 # brew cask install
-brew install --cask 1password 1password-cli adguard-vpn appcleaner calibre cyberduck discord font-jetbrains-mono-nerd-font google-chrome@dev handbrake iina \
-    knockknock loopback macfuse miniconda mos mounty musicbrainz-picard obsidian onyx raycast rectangle shottr soundsource steermouse visual-studio-code xld
+brew install --cask 1password 1password-cli adguard-vpn adobe-acrobat-reader appcleaner calibre cyberduck discord font-jetbrains-mono-nerd-font google-chrome@dev \
+    handbrake iterm2 knockknock loopback macfuse miniconda mos mounty musicbrainz-picard obsidian onyx raycast rectangle shottr soundsource steermouse utm \
+    visual-studio-code vlc vnc-viewer xld zed
 
 # docker-compose post-install
 mkdir -p "$HOME"/.docker/cli-plugins
