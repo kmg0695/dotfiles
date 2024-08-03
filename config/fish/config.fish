@@ -16,4 +16,6 @@ else
         set -x PATH "/opt/homebrew/Caskroom/miniconda/base/bin" $PATH
     end
 end
-# <<< conda initialize <<<
+
+zoxide init --cmd cd fish | source
+fzf --fish | source
