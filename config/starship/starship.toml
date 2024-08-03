@@ -90,6 +90,7 @@ symbol = " "
 [os.symbols]
 Alpaquita = " "
 Alpine = " "
+AlmaLinux = " "
 Amazon = " "
 Android = " "
 Arch = " "
@@ -105,6 +106,7 @@ Garuda = "󰛓 "
 Gentoo = " "
 HardenedBSD = "󰞌 "
 Illumos = "󰈸 "
+Kali = " "
 Linux = " "
 Mabox = " "
 Macos = " "
@@ -121,11 +123,13 @@ Pop = " "
 Raspbian = " "
 Redhat = " "
 RedHatEnterprise = " "
+RockyLinux = " "
 Redox = "󰀘 "
 Solus = "󰠳 "
 SUSE = " "
 Ubuntu = " "
 Unknown = " "
+Void = " "
 Windows = "󰍲 "
 
 [package]
@@ -150,7 +154,7 @@ symbol = "󰟔 "
 symbol = " "
 
 [rust]
-symbol = " "
+symbol = "󱘗 "
 
 [scala]
 symbol = " "
