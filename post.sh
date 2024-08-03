@@ -41,10 +41,6 @@ brew install --cask 1password 1password-cli adguard-vpn adobe-acrobat-reader ala
 # catppuccin-mocha
 curl -LO --output-dir "$HOME"/.config/alacritty https://github.com/catppuccin/alacritty/raw/main/catppuccin-mocha.toml
 
-# docker-compose post-install
-mkdir -p "$HOME"/.docker/cli-plugins
-ln -sfn "$HOMEBREW_PREFIX"/opt/docker-compose/bin/docker-compose "$HOME"/.docker/cli-plugins/docker-compose
-
 # modern unix aliases
 alias ls lsd --save
 alias l "ls -l" --save
@@ -59,10 +55,6 @@ alias bu "brew upgrade --verbose && fisher update && brew cleanup && brew autore
 # Conda post-install
 conda init "$(basename "$SHELL")"
 conda config --set auto_activate_base false
-
-# docker compose post-install
-mkdir -p "$HOME"/.docker/cli-plugins
-ln -sfn /opt/homebrew/opt/docker-compose/bin/docker-compose "$HOME"/.docker/cli-plugins/docker-compose
 
 # Final
 fish_update_completions
