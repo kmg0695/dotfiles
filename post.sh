@@ -40,7 +40,14 @@ ln -sfn "$HOMEBREW_PREFIX"/opt/docker-compose/bin/docker-compose "$HOME"/.docker
 
 # modern unix aliases
 alias ls lsd --save
+alias l "ls -l" --save
+alias la "ls -a" --save
+alias lla "ls -la" --save
+alias lt "ls --tree" --save
 alias cat bat --save
+
+# system upgrade alias
+alias bu "brew upgrade --verbose && fisher update && brew cleanup && brew autoremove && conda update --all --verbose --yes" --save
 
 # Conda post-install
 conda init "$(basename "$SHELL")"
