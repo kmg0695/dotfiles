@@ -16,6 +16,3 @@ defaults write com.apple.Dock showhidden -bool TRUE && killall Dock
 brew install fish
 sudo sh -c echo "$(brew --prefix)/bin/fish >> /etc/shells"
 chsh -s "$(brew --prefix)"/bin/fish
-
-# install iTerm2
-brew install iterm2
