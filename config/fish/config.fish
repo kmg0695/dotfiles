@@ -19,3 +19,4 @@ end
 
 zoxide init --cmd cd fish | source
 fzf --fish | source
+/opt/homebrew/opt/mise/bin/mise activate fish | source
