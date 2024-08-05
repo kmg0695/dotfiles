@@ -8,7 +8,7 @@ xargs brew install --cask <./brew/casks.txt
 mkdir -p "$HOME"/.docker/ "$HOME"/.tmux/ "$HOME"/.config/fish/ "$HOME"/.config/kitty/ "$HOME"/Library/Application\ Support/Code/Userfish
 
 # stow
-stow docker fish kitty starship tmux vscode
+stow .
 
 # tmux plugin manager
 git clone https://github.com/tmux-plugins/tpm "$HOME"/.tmux/plugins/tpm
