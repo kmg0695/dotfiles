@@ -15,7 +15,10 @@ htop
 hugo
 imagemagick
 jq
+lazygit
+libaacs
 lsd
+luarocks
 mailsy
 mise
 neovim
