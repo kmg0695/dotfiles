@@ -1,14 +1,14 @@
-#!/bin/sh
+#!/bin/bash
 
 # Install brew stuff
 xargs brew install <./brew/formula.txt
 xargs brew install --cask <./brew/casks.txt
 
 # Make some config directories
-mkdir -p "$HOME"/.docker/ "$HOME"/.tmux/ "$HOME"/.config/fish/ "$HOME"/.config/kitty/ "$HOME"/Library/Application\ Support/Code/Userfish
+mkdir -p "$HOME"/.docker/ "$HOME"/.tmux/ "$HOME"/.config/fish/ "$HOME"/.config/kitty/ "$HOME"/Library/Application\ Support/Code/User
 
 # stow
-stow .
+stow . --adopt
 
 # tmux plugin manager
 git clone https://github.com/tmux-plugins/tpm "$HOME"/.tmux/plugins/tpm
@@ -22,10 +22,6 @@ fzf_configure_bindings
 
 # autopair.fish
 fisher install jorgebucaran/autopair.fish
-
-# catppuccin-mocha
-curl -LO --output-dir "$HOME"/.config/alacritty https://github.com/catppuccin/alacritty/raw/main/catppuccin-mocha.toml
-# do not forget to set catppucin-mocha theme on kitty
 
 # Conda post-install
 conda init "$(basename "$SHELL")"

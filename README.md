@@ -4,22 +4,30 @@ This repo contains all the configuration files for setting up my development/dai
 
 This repo will be continuously updated.
 
-## Run After setup.sh
+## Prerequisites
+
+- ssh Folder must be in Home!
 
 ```sh
-# set default to fish
-sudo sh -c echo "$(brew --prefix)/bin/fish >> /etc/shells"
-chsh -s "$(brew --prefix)"/bin/fish
+# Run the following commands
+sudo rm -rf /Library/Developer/CommandLineTools
+sudo xcode-select --install
+softwareupdate --install-rosetta --agree-to-license
+mkdir Developer
+cd Developer
+git clone git@github.com:kmg0695/dotfiles.git
+```
 
+## open new terminal and run After setup.sh
+
+```sh
 # add brew path to fish
 fish_add_path /opt/homebrew/bin
-
-# install GNU stow
-brew install stow
 
 # then execute post.sh
 ```
 
 ## TODO
+
 - [ ] SSH Agent Integration with 1Password
-- [ ] Documentation
+- [ ] Better documentation

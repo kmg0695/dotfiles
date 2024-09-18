@@ -2,9 +2,6 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-# Starship
-starship init fish | source
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 if test -f /opt/homebrew/Caskroom/miniconda/base/bin/conda
@@ -16,7 +13,10 @@ else
         set -x PATH "/opt/homebrew/Caskroom/miniconda/base/bin" $PATH
     end
 end
+# <<< conda initialize <<<
 
-zoxide init --cmd cd fish | source
-fzf --fish | source
-/opt/homebrew/opt/mise/bin/mise activate fish | source
+# starship
+starship init fish | source
+
+# zoxide
+zoxide init fish --cmd cd | source

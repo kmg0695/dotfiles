@@ -6,7 +6,6 @@ docker
 docker-compose
 fd
 ffmpegthumbnailer
-fish
 fzf
 go
 gromgit/fuse/ntfs-3g-mac
@@ -29,7 +28,6 @@ rclone
 ripgrep
 sevenzip
 starship
-stow
 teamookla/speedtest/speedtest
 tmux
 wget
