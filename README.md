@@ -10,7 +10,6 @@ This repo will be continuously updated.
 
 ```sh
 # Run the following commands
-sudo rm -rf /Library/Developer/CommandLineTools
 sudo xcode-select --install
 softwareupdate --install-rosetta --agree-to-license
 mkdir Developer
