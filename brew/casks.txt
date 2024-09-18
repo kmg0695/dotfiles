@@ -1,5 +1,6 @@
 1password
 1password-cli
+adguard
 adguard-vpn
 adobe-acrobat-reader
 android-file-transfer
