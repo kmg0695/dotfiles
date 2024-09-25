@@ -19,6 +19,7 @@ libaacs
 lsd
 luarocks
 mailsy
+mas
 mise
 neovim
 nerdfetch
