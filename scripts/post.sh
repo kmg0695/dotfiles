@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Install brew stuff
-xargs brew install <./brew/formula.txt
-xargs brew install --cask <./brew/casks.txt
+brew bundle install --file ../brew/Brewfile
 
 # Make some config directories
 mkdir -p "$HOME"/.docker/ "$HOME"/.tmux/ "$HOME"/.config/fish/ "$HOME"/.config/kitty/ "$HOME"/Library/Application\ Support/Code/User

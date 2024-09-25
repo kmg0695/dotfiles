@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# Rosetta and xcode-tools
-sudo rm -rf /Library/Developer/CommandLineTools
-sudo xcode-select --install
+# Rosetta
 softwareupdate --install-rosetta --agree-to-license
 
 # homebrew
@@ -22,6 +20,5 @@ defaults write com.apple.dock autohide-time-modifier -int 0
 defaults write com.apple.Dock showhidden -bool TRUE
 killall Dock
 
-echo "Follow the next steps in README"
 sleep 5
 exit
