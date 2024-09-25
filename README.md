@@ -6,7 +6,7 @@ This repo will be continuously updated.
 
 ## Prerequisites
 
-- ssh Folder must be in Home!
+- ssh Folder must be in Home before running the scripts!
 
 ```sh
 # Run the following commands
@@ -22,7 +22,7 @@ git clone git@github.com:kmg0695/dotfiles.git
 ```sh
 # add brew path to fish
 fish_add_path /opt/homebrew/bin
-
+fish_add_path /opt/homebrew/sbin
 # then execute post.sh
 ```
 
