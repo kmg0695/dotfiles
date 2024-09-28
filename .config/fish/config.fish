@@ -20,3 +20,6 @@ starship init fish | source
 
 # zoxide
 zoxide init fish --cmd cd | source
+
+# mise
+/opt/homebrew/opt/mise/bin/mise activate fish | source
