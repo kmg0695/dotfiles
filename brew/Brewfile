@@ -61,6 +61,7 @@ cask "knockknock"
 cask "loopback"
 cask "macfuse"
 cask "miniconda"
+cask "mist"
 cask "mos"
 cask "mounty"
 cask "musicbrainz-picard"
@@ -74,6 +75,7 @@ cask "transmit"
 cask "utm"
 cask "visual-studio-code"
 cask "vlc"
+cask "whatsapp"
 cask "xld"
 mas "1Password for Safari", id: 1569813296
 mas "Amphetamine", id: 937984704
@@ -91,7 +93,6 @@ mas "Sink It for Reddit", id: 6449873635
 mas "SponsorBlock", id: 1573461917
 mas "The Camelizer", id: 1532579087
 mas "The Unarchiver", id: 425424353
-mas "‎WhatsApp", id: 310633997
 vscode "bradlc.vscode-tailwindcss"
 vscode "budparr.language-hugo-vscode"
 vscode "esbenp.prettier-vscode"
