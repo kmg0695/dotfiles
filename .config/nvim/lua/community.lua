@@ -12,4 +12,6 @@ return {
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.terminal-integration.vim-tmux-navigator" },
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.pack.rainbow-delimiter-indent-blankline" },
 }
