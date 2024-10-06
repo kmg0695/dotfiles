@@ -23,3 +23,9 @@ zoxide init fish --cmd cd | source
 
 # mise
 /opt/homebrew/opt/mise/bin/mise activate fish | source
+
+# Generated for envman. Do not edit.
+test -s ~/.config/envman/load.fish; and source ~/.config/envman/load.fish
+
+# force to venv to install packages
+set -g -x PIP_REQUIRE_VIRTUALENV true
