@@ -93,6 +93,7 @@ mas "Sink It for Reddit", id: 6449873635
 mas "SponsorBlock", id: 1573461917
 mas "The Camelizer", id: 1532579087
 mas "The Unarchiver", id: 425424353
+mas "‎WhatsApp", id: 310633997
 vscode "bradlc.vscode-tailwindcss"
 vscode "budparr.language-hugo-vscode"
 vscode "esbenp.prettier-vscode"
