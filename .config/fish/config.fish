@@ -29,13 +29,3 @@ test -s ~/.config/envman/load.fish; and source ~/.config/envman/load.fish
 
 # force to venv to install packages
 set -g -x PIP_REQUIRE_VIRTUALENV true
-
-# This tells fish to run a couple of functions as event handlers --
-# that is, to run a function when a variable changes or something similar.
-# These functions can't be autoloaded.
-#
-# See https://fishshell.com/docs/current/language.html#event
-#
-function __auto_enable_venv --on-variable PWD
-    auto_enable_venv
-end
