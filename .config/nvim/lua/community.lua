@@ -14,4 +14,7 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.rainbow-delimiter-indent-blankline" },
+  { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.fish" },
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
 }
