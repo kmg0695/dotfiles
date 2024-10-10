@@ -6,7 +6,7 @@ This repo will be continuously updated.
 
 ## Prerequisites
 
-- ssh Folder must be in Home before running the scripts!
+- ssh and any important folders must be imported before running the scripts!
 
 ```sh
 # Run the following commands
@@ -23,10 +23,11 @@ git clone git@github.com:kmg0695/dotfiles.git
 # add brew path to fish
 fish_add_path /opt/homebrew/bin
 fish_add_path /opt/homebrew/sbin
+
 # then execute post.sh
 ```
 
 ## TODO
 
-- [ ] SSH Agent Integration with 1Password
 - [ ] Better documentation
+- [ ] Rework setup logic
