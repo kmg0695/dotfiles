@@ -6,7 +6,7 @@ This repo will be continuously updated.
 
 ## Prerequisites
 
-- ssh and any important folders must be imported before running the scripts!
+- `ssh` and any important folders must be imported before running the scripts!
 - Run the following commands
 
 ```sh
