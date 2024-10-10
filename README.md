@@ -7,9 +7,9 @@ This repo will be continuously updated.
 ## Prerequisites
 
 - ssh and any important folders must be imported before running the scripts!
+- Run the following commands
 
 ```sh
-# Run the following commands
 sudo xcode-select --install
 softwareupdate --install-rosetta --agree-to-license
 mkdir Developer
