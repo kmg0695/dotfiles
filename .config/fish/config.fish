@@ -29,3 +29,6 @@ test -s ~/.config/envman/load.fish; and source ~/.config/envman/load.fish
 
 # force to venv to install packages
 set -g -x PIP_REQUIRE_VIRTUALENV true
+# set 1p sock
+set -eUgfl SSH_AUTH_SOCK
+set -Ux SSH_AUTH_SOCK ~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
