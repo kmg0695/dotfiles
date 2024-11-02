@@ -32,5 +32,5 @@ conda init "$(basename "$SHELL")"
 conda config --set auto_activate_base false
 
 # Final
-fish_add_path "$HOME"/go/bin
+#fish_add_path "$HOME"/go/bin
 fish_update_completions
