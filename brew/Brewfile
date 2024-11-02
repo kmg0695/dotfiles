@@ -75,6 +75,7 @@ cask "utm"
 cask "visual-studio-code"
 cask "vlc"
 cask "xld"
+cask "zen-browser"
 mas "1Password for Safari", id: 1569813296
 mas "Amphetamine", id: 937984704
 mas "Boop", id: 1518425043
