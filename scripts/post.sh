@@ -6,12 +6,13 @@ brew bundle install --file ../brew/Brewfile
 # Make some config directories
 mkdir -p "$HOME"/.docker/ "$HOME"/.tmux/ "$HOME"/.config/fish/ "$HOME"/.config/kitty/ "$HOME"/Library/Application\ Support/Code/User
 
-# stow
 # astronvim setup
 git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 
+# stow and git restore some items
 stow . --adopt
+git restore .
 
 # tmux plugin manager
 git clone https://github.com/tmux-plugins/tpm "$HOME"/.tmux/plugins/tpm
