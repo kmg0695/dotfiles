@@ -31,5 +31,10 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
-    "workbench.settings.applyToAllProfiles": []
+    "workbench.settings.applyToAllProfiles": [],
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim"
 }
