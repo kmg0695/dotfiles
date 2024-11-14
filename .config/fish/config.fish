@@ -24,9 +24,5 @@ zoxide init fish --cmd cd | source
 # mise
 /opt/homebrew/opt/mise/bin/mise activate fish | source
 
-# force to venv to install packages
-set -gx PIP_REQUIRE_VIRTUALENV true
-
 # set 1p sock
-set -eUgfl SSH_AUTH_SOCK
-set -Ux SSH_AUTH_SOCK ~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+set -gx SSH_AUTH_SOCK ~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
