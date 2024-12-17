@@ -14,4 +14,7 @@ return {
 	{ import = "astrocommunity.pack.fish" },
 	{ import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
 	{ import = "astrocommunity.recipes.vscode" },
+	{ import = "astrocommunity.docker.lazydocker" },
+	{ import = "astrocommunity.pack.docker" },
+	{ import = "astrocommunity.pack.typescript" },
 }
