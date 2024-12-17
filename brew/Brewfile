@@ -46,13 +46,10 @@ brew "teamookla/speedtest/speedtest"
 cask "1password"
 cask "1password-cli"
 cask "adguard"
-cask "adguard-vpn"
-cask "adobe-acrobat-reader"
 cask "android-file-transfer"
 cask "appcleaner"
 cask "cyberduck"
 cask "discord"
-cask "firefox"
 cask "font-fira-code-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-symbols-only-nerd-font"
@@ -66,31 +63,28 @@ cask "mist"
 cask "mos"
 cask "mounty"
 cask "mullvadvpn"
-cask "musicbrainz-picard"
 cask "onyx"
 cask "shottr"
 cask "soundsource"
 cask "steermouse"
-cask "tor-browser"
 cask "transmit"
 cask "usbimager"
-cask "utm"
 cask "visual-studio-code"
 cask "vlc"
 cask "xld"
+cask "zoom"
 mas "1Password for Safari", id: 1569813296
 mas "Amphetamine", id: 937984704
 mas "Boop", id: 1518425043
-mas "CrystalFetch", id: 6454431289
 mas "Dropover", id: 1355679052
 mas "Goodnotes", id: 1444383602
 mas "Hidden Bar", id: 1452453066
-mas "Hush", id: 1544743900
 mas "Logic Pro", id: 634148309
 mas "Messenger", id: 1480068668
 mas "One Thing", id: 1604176982
+mas "OverPicture", id: 1188020834
+mas "Pages", id: 409201541
 mas "Pure Paste", id: 1611378436
-mas "Sink It for Reddit", id: 6449873635
 mas "SponsorBlock", id: 1573461917
 mas "The Camelizer", id: 1532579087
 mas "The Unarchiver", id: 425424353
