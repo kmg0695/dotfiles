@@ -48,11 +48,13 @@ cask "1password-cli"
 cask "adguard"
 cask "android-file-transfer"
 cask "appcleaner"
+cask "brave-browser"
 cask "cyberduck"
 cask "discord"
 cask "font-fira-code-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-symbols-only-nerd-font"
+cask "ghostty"
 cask "google-chrome@dev"
 cask "knockknock"
 cask "loopback"
@@ -62,6 +64,7 @@ cask "mist"
 cask "mos"
 cask "mounty"
 cask "mullvadvpn"
+cask "obsidian"
 cask "onyx"
 cask "shottr"
 cask "soundsource"
@@ -87,6 +90,7 @@ mas "Pure Paste", id: 1611378436
 mas "SponsorBlock", id: 1573461917
 mas "The Camelizer", id: 1532579087
 mas "The Unarchiver", id: 425424353
+mas "Windows App", id: 1295203466
 mas "Yubico Authenticator", id: 1497506650
 mas "‎WhatsApp", id: 310633997
 vscode "asvetliakov.vscode-neovim"
