@@ -1,6 +1,6 @@
 if status is-interactive
     and not set -q TMUX
-    exec tmux
+    exec tmux new -A -s 0
 end
 
 # >>> conda initialize >>>
