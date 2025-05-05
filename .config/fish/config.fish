@@ -1,6 +1,4 @@
 if status is-interactive
-    and not set -q TMUX
-    exec tmux new -A -s $USER
 end
 
 # >>> conda initialize >>>
