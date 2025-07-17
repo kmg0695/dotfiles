@@ -6,7 +6,6 @@
     "console-ninja.featureSet": "Community",
     "workbench.iconTheme": "vscode-icons",
     "editor.minimap.enabled": false,
-    "prettier.requireConfig": true,
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -36,5 +35,10 @@
         "asvetliakov.vscode-neovim": 1
     },
     "workbench.colorTheme": "Catppuccin Mocha",
-    "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim"
+    "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+    "editor.formatOnSave": true,
+    "[astro]": {
+        "editor.defaultFormatter": "astro-build.astro-vscode"
+    },
+    "vim.useSystemClipboard": true
 }

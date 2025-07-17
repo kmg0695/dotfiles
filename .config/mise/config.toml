@@ -1,4 +1,4 @@
 [tools]
 node = "lts"
 go = "latest"
-hugo = "latest"
+python = "latest"
