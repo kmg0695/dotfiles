@@ -1,7 +1,4 @@
 theme = catppuccin-mocha
-font-size = 12.5
-window-padding-color = background
-font-feature = -calt
+font-size = 13
 auto-update = download
-window-height = 32
-window-width = 137
+font-family = "JetBrainsMono Nerd Font Mono"
