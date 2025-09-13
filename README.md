@@ -30,4 +30,4 @@ fish_add_path /opt/homebrew/sbin
 ## TODO
 
 - [ ] Better documentation
-- [ ] Rework setup logic to Nix
+- [ ] Review everything for Tahoe release
