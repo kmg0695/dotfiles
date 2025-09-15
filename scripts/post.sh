@@ -26,6 +26,9 @@ fisher install PatrickF1/fzf.fish && fzf_configure_bindings
 fisher install jorgebucaran/autopair.fish
 fisher install nickeb96/puffer-fish
 
+# starship preset
+starship preset catppuccin-powerline -o ~/.config/starship.toml
+
 # Final
 #fish_add_path "$HOME"/go/bin
 fish_update_completions
