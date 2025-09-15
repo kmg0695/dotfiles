@@ -12,7 +12,6 @@ mac_settings() {
   defaults write com.apple.dock expose-group-apps -bool true
 
   # move windows using ctrl + cmd
-
   defaults write -g NSWindowShouldDragOnGesture -bool
 
   # restart said services
@@ -31,7 +30,7 @@ chsh -s /opt/homebrew/bin/fish
 
 mac_settings
 
-sleep 5
 # Install post prerequisites
 brew install stow fish
+
 exit
