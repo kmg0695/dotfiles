@@ -21,9 +21,6 @@ mac_settings() {
 
 }
 
-# Rosetta
-softwareupdate --install-rosetta --agree-to-license
-
 # homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 eval "$(/opt/homebrew/bin/brew shellenv)"
