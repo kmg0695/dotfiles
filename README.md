@@ -6,7 +6,8 @@ This repo will be continuously updated.
 
 ## Setup
 
-> [!Warning] `ssh` and any important folders must be imported before running the scripts!
+> [!Warning]
+> `ssh` and any important folders must be imported before running the scripts!
 
 1. Run the following commands
 
