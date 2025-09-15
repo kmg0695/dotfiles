@@ -4,12 +4,13 @@ This repo contains all the configuration files for setting up my development/dai
 
 This repo will be continuously updated.
 
-## Prerequisites
+## Setup
 
-- `ssh` and any important folders must be imported before running the scripts!
-- Run the following commands
+> [!Warning] `ssh` and any important folders must be imported before running the scripts!
 
-```sh
+1. Run the following commands
+
+```bash
 sudo xcode-select --install
 softwareupdate --install-rosetta --agree-to-license
 mkdir Developer
@@ -17,14 +18,20 @@ cd Developer
 git clone git@github.com:kmg0695/dotfiles.git
 ```
 
-## open new terminal and run After setup.sh
+2. Then, run the following:
 
-```sh
+```bash
+bash ./dotfiles/scripts/setup.sh
+sudo shutdown -r now
+```
+
+3. After the restart, run the following:
+
+```bash
 # add brew path to fish
 fish_add_path /opt/homebrew/bin
 fish_add_path /opt/homebrew/sbin
-
-# then execute post.sh
+bash ./dotfiles/scripts/post.sh
 ```
 
 ## TODO
