@@ -18,6 +18,7 @@ git restore .
 git clone https://github.com/tmux-plugins/tpm "$HOME"/.tmux/plugins/tpm
 
 # Fisher
+# shellcheck source=/dev/null
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 
 # fzf.fish
