@@ -29,9 +29,7 @@ sudo shutdown -r now
 3. After the restart, run the following:
 
 ```bash
-# add brew path to fish
-fish_add_path /opt/homebrew/bin
-fish_add_path /opt/homebrew/sbin
+fish_add_path /opt/homebrew/bin /opt/homebrew/sbin
 bash ./dotfiles/scripts/post.sh
 ```
 
