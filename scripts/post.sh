@@ -28,10 +28,8 @@ fzf_configure_bindings
 # autopair.fish
 fisher install jorgebucaran/autopair.fish
 
-# Conda post-install (Maybe removed in future)
-conda init "$(basename "$SHELL")"
-conda config --set auto_activate_base false
-
 # Final
 #fish_add_path "$HOME"/go/bin
 fish_update_completions
+
+exit
