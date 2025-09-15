@@ -73,13 +73,9 @@ brew "teamookla/speedtest/speedtest"
 cask "1password"
 cask "1password-cli"
 cask "aerospace"
-cask "appcleaner"
 cask "betterdisplay"
-cask "brave-browser"
 cask "calibre"
-cask "font-fira-code-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
-cask "font-symbols-only-nerd-font"
 cask "fuse-t"
 cask "garmin-express"
 cask "ghostty"
@@ -87,37 +83,27 @@ cask "google-chrome@dev"
 cask "iina"
 cask "loopback"
 cask "lrcget"
-cask "microsoft-auto-update"
-cask "microsoft-teams"
 cask "mounty"
 cask "musicbrainz-picard"
 cask "onedrive"
 cask "onyx"
 cask "orbstack"
-cask "playcover-community"
 cask "plexamp"
+cask "rar"
 cask "raycast"
 cask "shottr"
 cask "soundsource"
 cask "transmit"
 cask "vesktop"
-cask "visual-studio-code"
-cask "wireshark-app"
 cask "xld"
-cask "zen"
-mas "1Password for Safari", id: 1569813296
 mas "Amphetamine", id: 937984704
 mas "Boop", id: 1518425043
 mas "Dropover", id: 1355679052
-mas "Goodnotes", id: 1444383602
 mas "Hidden Bar", id: 1452453066
-mas "Hush", id: 1544743900
-mas "Kagi for Safari", id: 1622835804
 mas "Messenger", id: 1480068668
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft Word", id: 462054704
 mas "One Thing", id: 1604176982
-mas "OverPicture", id: 1188020834
 mas "Pure Paste", id: 1611378436
 mas "RunCat", id: 1429033973
 mas "Sink It", id: 6449873635
@@ -125,18 +111,3 @@ mas "SponsorBlock", id: 1573461917
 mas "Tailscale", id: 1475387142
 mas "WhatsApp", id: 310633997
 mas "Yubico Authenticator", id: 1497506650
-vscode "astro-build.astro-vscode"
-vscode "catppuccin.catppuccin-vsc"
-vscode "esbenp.prettier-vscode"
-vscode "kevinrose.vsc-python-indent"
-vscode "ms-python.debugpy"
-vscode "ms-python.python"
-vscode "ms-python.vscode-pylance"
-vscode "ms-python.vscode-python-envs"
-vscode "redhat.vscode-xml"
-vscode "tamasfe.even-better-toml"
-vscode "timonwong.shellcheck"
-vscode "visualstudioexptteam.intellicode-api-usage-examples"
-vscode "visualstudioexptteam.vscodeintellicode"
-vscode "vscodevim.vim"
-vscode "yzhang.markdown-all-in-one"
