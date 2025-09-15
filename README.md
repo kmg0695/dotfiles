@@ -31,3 +31,4 @@ fish_add_path /opt/homebrew/sbin
 
 - [ ] Better documentation
 - [ ] Review everything for Tahoe release
+- [ ] Get all changed system prefs cuz going to System Preferences is annoying
