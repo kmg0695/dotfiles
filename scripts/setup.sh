@@ -42,13 +42,13 @@ mac_settings() {
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 $(command -v eval) "$(/opt/homebrew/bin/brew shellenv)"
 
+# Install post prerequisites
+$(command -v brew) install stow fish
+
 # set fish as default shell
 $(command -v echo) /opt/homebrew/bin/fish | sudo tee -a /etc/shells
 $(command -v chsh) -s /opt/homebrew/bin/fish
 
 mac_settings
-
-# Install post prerequisites
-$(command -v brew) install stow fish
 
 exit
