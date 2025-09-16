@@ -3,7 +3,6 @@ tap "dart-lang/dart"
 tap "dimentium/autoraise"
 tap "felixkratz/formulae"
 tap "gromgit/fuse"
-tap "homebrew/bundle"
 tap "koekeishiya/formulae"
 tap "mediosz/tap"
 tap "nikitabobko/tap"
@@ -85,12 +84,10 @@ cask "loopback"
 cask "lrcget"
 cask "mounty"
 cask "musicbrainz-picard"
-cask "onedrive"
 cask "onyx"
 cask "orbstack"
 cask "plexamp"
 cask "rar"
-cask "raycast"
 cask "shottr"
 cask "soundsource"
 cask "transmit"
@@ -108,4 +105,3 @@ mas "Pure Paste", id: 1611378436
 mas "RunCat", id: 1429033973
 mas "Tailscale", id: 1475387142
 mas "WhatsApp", id: 310633997
-mas "Yubico Authenticator", id: 1497506650
