@@ -31,9 +31,6 @@ mac_settings() {
   $(command -v defaults) write com.apple.terminal StringEncodings -array 4
   $(command -v defaults) write com.apple.terminal UnlimitedScrollback -bool true
 
-  # Disable Apple Intelligence crap
-  $(command -v defaults) write com.apple.CloudSubscriptionFeatures.optIn "545129924" -bool "false"
-
   # AM Notif turn off (Very annoying)
   $(command -v defaults) write com.apple.Music "userWantsPlaybackNotifications" -bool "false"
 
