@@ -22,7 +22,8 @@ $(command -v git) clone https://github.com/tmux-plugins/tpm "$HOME"/.tmux/plugin
 
 # Fisher
 # shellcheck source=/dev/null
-$(command -v curl) -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && $(command -v fisher) install jorgebucaran/fisher
+$(command -v curl) -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source
+$(command -v fisher) install jorgebucaran/fisher
 
 # fisher plugins
 $(command -v fisher) install PatrickF1/fzf.fish && fzf_configure_bindings
