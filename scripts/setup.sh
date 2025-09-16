@@ -22,9 +22,6 @@ mac_settings() {
   $(command -v defaults) write com.apple.spaces spans-displays -bool true
   $(command -v defaults) write com.apple.dock expose-group-apps -bool true
 
-  # move windows using ctrl + cmd
-  $(command -v defaults) write -g NSWindowShouldDragOnGesture -bool
-
   # Keyboard niceties
   $(command -v defaults) write NSGlobalDomain ApplePressAndHoldEnabled -bool false
   $(command -v defaults) write NSGlobalDomain KeyRepeat -int 1
