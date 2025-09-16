@@ -14,6 +14,9 @@ $(command -v rm) -rf ~/.config/nvim/.git
 $(command -v stow) . --adopt
 $(command -v git) restore .
 
+# uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
 # tmux plugin manager
 $(command -v git) clone https://github.com/tmux-plugins/tpm "$HOME"/.tmux/plugins/tpm
 
