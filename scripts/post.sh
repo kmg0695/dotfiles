@@ -1,4 +1,5 @@
 #!/bin/bash
+set -eix
 
 # Install brew stuff
 $(command -v brew) bundle install --file ../brew/Brewfile

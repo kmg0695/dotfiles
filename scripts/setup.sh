@@ -1,4 +1,5 @@
 #!/bin/bash
+set -eix
 
 mac_settings() {
   # macOS Nice UI stuff
