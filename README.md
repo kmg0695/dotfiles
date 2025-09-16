@@ -13,16 +13,20 @@ This repo will be continuously updated.
 
 ```bash
 sudo xcode-select --install
+```
+
+```bash
 softwareupdate --install-rosetta --agree-to-license
 mkdir Developer
 cd Developer
 git clone git@github.com:kmg0695/dotfiles.git
+cd dotfiles
 ```
 
 2. Then, run the following:
 
 ```bash
-bash ./dotfiles/scripts/setup.sh
+bash scripts/setup.sh
 sudo shutdown -r now
 ```
 
@@ -30,7 +34,7 @@ sudo shutdown -r now
 
 ```bash
 fish_add_path /opt/homebrew/bin /opt/homebrew/sbin
-bash ./dotfiles/scripts/post.sh
+bash scripts/post.sh
 ```
 
 ## TODO
