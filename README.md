@@ -19,7 +19,7 @@ sudo xcode-select --install
 softwareupdate --install-rosetta --agree-to-license
 mkdir Developer
 cd Developer
-git clone git@github.com:kmg0695/dotfiles.git
+git clone https://github.com/kmg0695/dotfiles.git
 cd dotfiles
 ```
 
@@ -28,13 +28,6 @@ cd dotfiles
 ```bash
 bash scripts/setup.sh
 sudo shutdown -r now
-```
-
-3. After the restart, run the following:
-
-```bash
-fish_add_path /opt/homebrew/bin /opt/homebrew/sbin
-bash scripts/post.sh
 ```
 
 ## TODO
