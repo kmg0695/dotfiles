@@ -211,6 +211,13 @@ run = 'layout floating'
 if.app-id = 'com.1password.1password'
 run = 'layout floating'
 
+[[on-window-detected]]
+if.app-id = 'com.aone.keka'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'audio.vital.standalone'
+run = 'layout floating'
 
 # workspace assignments
 [workspace-to-monitor-force-assignment]

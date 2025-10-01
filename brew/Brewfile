@@ -69,18 +69,21 @@ brew "zoxide"
 brew "sass/sass/sass"
 brew "teamookla/speedtest/speedtest"
 cask "1password"
-cask "1password-cli"
+cask "1password-cli@beta"
 cask "aerospace"
 cask "calibre"
 cask "font-jetbrains-mono-nerd-font"
 cask "fuse-t"
 cask "garmin-express"
 cask "ghostty"
+cask "gns3"
 cask "google-chrome@dev"
 cask "iina"
+cask "keka"
+cask "kekaexternalhelper"
+cask "legcord"
 cask "loopback"
 cask "lrcget"
-cask "mounty"
 cask "musicbrainz-picard"
 cask "orbstack"
 cask "plexamp"
@@ -88,7 +91,7 @@ cask "rar"
 cask "shottr"
 cask "soundsource"
 cask "transmit"
-cask "vesktop"
+cask "wireshark-app"
 cask "xld"
 mas "Amphetamine", id: 937984704
 mas "Boop", id: 1518425043
@@ -98,7 +101,9 @@ mas "Messenger", id: 1480068668
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft Word", id: 462054704
 mas "One Thing", id: 1604176982
+mas "OneDrive", id: 823766827
 mas "Pure Paste", id: 1611378436
 mas "RunCat", id: 1429033973
+mas "StopTheMadness Pro", id: 6471380298
 mas "Tailscale", id: 1475387142
 mas "WhatsApp", id: 310633997
