@@ -219,6 +219,10 @@ run = 'layout floating'
 if.app-id = 'audio.vital.standalone'
 run = 'layout floating'
 
+[[on-window-detected]]
+if.app-id = 'dev.kdrag0n.MacVirt'
+run = 'layout floating'
+
 # workspace assignments
 [workspace-to-monitor-force-assignment]
 1 = 'main'
