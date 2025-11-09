@@ -23,13 +23,6 @@ zoxide init fish --cmd cd | source
 # mise
 /opt/homebrew/opt/mise/bin/mise activate fish | source
 
-# set 1p sock
-set -gx SSH_AUTH_SOCK ~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
-
 # Added by OrbStack: command-line tools and integration
 # This won't be added again if you remove it.
 source ~/.orbstack/shell/init2.fish 2>/dev/null || :
-
-# 1p cli
-op completion fish | source
-source ~/.config/op/plugins.sh
