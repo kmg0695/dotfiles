@@ -13,5 +13,4 @@ return {
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.astro" },
   { import = "astrocommunity.pack.typescript" },
-  { import = "astrocommunity.pack.full-dadbod" },
 }
