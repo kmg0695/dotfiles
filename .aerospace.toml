@@ -226,6 +226,9 @@ run = 'layout floating'
 if.app-id = 'com.apple.Music'
 run = 'layout floating'
 
+[[on-window-detected]]
+if.app-id = 'com.bitwarden.desktop'
+run = 'layout floating'
 
 # workspace assignments
 [workspace-to-monitor-force-assignment]
