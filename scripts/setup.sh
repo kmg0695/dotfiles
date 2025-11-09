@@ -57,7 +57,7 @@ END
 mac_settings
 
 # Install brew stuff
-$(command -v brew) bundle install --file brew/Brewfile
+$(command -v brew) bundle install --file brew/Brewfile --verbose
 
 # Make some config directories
 $(command -v mkdir) -p "$HOME"/.docker/ "$HOME"/.tmux/ "$HOME"/.config/fish/ "$HOME"/.config/fastfetch "$HOME"/.config/mise
@@ -92,15 +92,15 @@ fish <<'END'
   fisher install PatrickF1/fzf.fish
   fzf_configure_bindings
   fisher install jorgebucaran/autopair.fish
-  fisher install nickeb96/puffer-fish
 END
 
 # starship preset
-$(command -v starship) preset catppuccin-powerline -o ~/.config/starship.toml
+$(command -v starship) preset nerd-font-symbols -o ~/.config/starship.toml
 
 # Final
 fish <<'END'
   fish_update_completions
+  set -Ux SSH_AUTH_SOCK /Users/$USER/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
 END
 
 exit
