@@ -1,3 +1,14 @@
 theme = Catppuccin Mocha
 font-size = 13
 auto-update = download
+shell-integration = fish
+
+#keybind = ctrl+n=new_window
+
+#keybind = ctrl+s>h=new_split:left
+#keybind = ctrl+s>j=new_split:down
+#keybind = ctrl+s>k=new_split:up
+#keybind = ctrl+s>l=new_split:right
+
+#keybind = ctrl+s>n=next_tab
+#keybind = ctrl+s>p=previous_tab
