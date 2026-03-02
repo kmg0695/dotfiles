@@ -11,13 +11,14 @@ mac_settings() {
   $(command -v defaults) write com.apple.dock expose-animation-duration -float 0.1
   $(command -v defaults) write com.apple.dock "mineffect" -string "scale"
   $(command -v defaults) write com.apple.dock "tilesize" -int "48"
-
+  $(command -v defaults) write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerDrag" -bool "true"
   # Finder settings
   $(command -v defaults) write com.apple.finder ShowPathbar -bool true
   $(command -v defaults) write com.apple.finder ShowStatusBar -bool true
   $(command -v defaults) write com.apple.desktopservices DSDontWriteNetworkStores -bool true
   $(command -v defaults) write NSGlobalDomain AppleShowAllExtensions -bool true
   $(command -v defaults) write com.apple.finder AppleShowAllFiles -bool true
+  $(commanv -v defaults) write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 
   # Aerospace specific commands
   $(command -v defaults) write com.apple.spaces spans-displays -bool true
