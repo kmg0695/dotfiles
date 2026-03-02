@@ -1,6 +1,11 @@
 if status is-interactive
 end
 
+if status is-login
+    set -e SSH_AUTH_SOCK
+    set -Ux SSH_AUTH_SOCK /Users/grippy/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
+end
+
 # starship
 starship init fish | source
 
