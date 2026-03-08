@@ -23,15 +23,13 @@ git clone https://github.com/kmg0695/dotfiles.git
 cd dotfiles
 ```
 
-2. Then, run the following:
+2. Then, run the following (It'll restart automatically after running this script):
 
 ```bash
 bash scripts/setup.sh
-sudo shutdown -r now
 ```
 
 ## TODO
 
-- [ ] Better documentation
-- [ ] Review everything for Tahoe release
-- [ ] Get all changed system prefs cuz going to System Preferences is annoying
+- [x] Better documentation (Good enough)
+- [ ] Get as much defaults as I can
