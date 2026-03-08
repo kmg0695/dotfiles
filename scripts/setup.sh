@@ -12,6 +12,7 @@ mac_settings() {
   $(command -v defaults) write com.apple.dock "mineffect" -string "scale"
   $(command -v defaults) write com.apple.dock "tilesize" -int "48"
   $(command -v defaults) write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerDrag" -bool "true"
+  $(command -v defaults) write -g com.apple.trackpad.scaling -int 3
   # Finder settings
   $(command -v defaults) write com.apple.finder ShowPathbar -bool true
   $(command -v defaults) write com.apple.finder ShowStatusBar -bool true
