@@ -103,7 +103,6 @@ $(command -v starship) preset nerd-font-symbols -o ~/.config/starship.toml
 # Final
 fish <<'END'
   fish_update_completions
-  set -Ux SSH_AUTH_SOCK /Users/$USER/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
 END
 
 exit
