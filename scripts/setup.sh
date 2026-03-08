@@ -13,6 +13,7 @@ mac_settings() {
   $(command -v defaults) write com.apple.dock "tilesize" -int "48"
   $(command -v defaults) write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerDrag" -bool "true"
   $(command -v defaults) write -g com.apple.trackpad.scaling -int 3
+
   # Finder settings
   $(command -v defaults) write com.apple.finder ShowPathbar -bool true
   $(command -v defaults) write com.apple.finder ShowStatusBar -bool true
@@ -36,9 +37,6 @@ mac_settings() {
 
   # AM Notif turn off (Very annoying)
   $(command -v defaults) write com.apple.Music "userWantsPlaybackNotifications" -bool "false"
-
-  # restart said services
-  $(command -v killall) Dock SystemUIServer Finder Safari Music
 }
 
 # homebrew
@@ -105,4 +103,10 @@ fish <<'END'
   fish_update_completions
 END
 
-exit
+# restart (ty Opencode lol)
+for i in {15..1}; do
+  echo -ne "Done! Restarting in $i seconds...\r"
+  sleep 1
+done
+
+sudo shutdown -r now
