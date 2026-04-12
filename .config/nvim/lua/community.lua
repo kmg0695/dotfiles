@@ -11,7 +11,10 @@ return {
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.typescript" },
-  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.python.base" },
   { import = "astrocommunity.pack.python.basedpyright" },
   { import = "astrocommunity.pack.python.ruff" },
+  { import = "astrocommunity.pack.prettier" },
+  { import = "astrocommunity.ai.opencode-nvim" },
+  { import = "astrocommunity.pack.full-dadbod" },
 }
