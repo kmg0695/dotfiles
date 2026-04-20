@@ -1,16 +1,16 @@
 #!/bin/bash
-set -eix
+set -e
 
 mac_settings() {
   # macOS Nice UI stuff
   $(command -v defaults) write com.apple.dock autohide -bool true
   $(command -v defaults) write com.apple.dock autohide-delay -float 0
   $(command -v defaults) write com.apple.dock autohide-time-modifier -int 0
-  $(command -v defaults) write com.apple.Dock showhidden -bool TRUE
+  $(command -v defaults) write com.apple.Dock showhidden -bool true
   $(command -v defaults) write -g NSAutomaticWindowAnimationsEnabled -bool false
   $(command -v defaults) write com.apple.dock expose-animation-duration -float 0.1
   $(command -v defaults) write com.apple.dock "mineffect" -string "scale"
-  $(command -v defaults) write com.apple.dock "tilesize" -int "48"
+  $(command -v defaults) write com.apple.dock "tilesize" -int "42"
   $(command -v defaults) write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerDrag" -bool "true"
   $(command -v defaults) write -g com.apple.trackpad.scaling -int 3
 
@@ -20,7 +20,6 @@ mac_settings() {
   $(command -v defaults) write com.apple.desktopservices DSDontWriteNetworkStores -bool true
   $(command -v defaults) write NSGlobalDomain AppleShowAllExtensions -bool true
   $(command -v defaults) write com.apple.finder AppleShowAllFiles -bool true
-  $(commanv -v defaults) write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 
   # Aerospace specific commands
   $(command -v defaults) write com.apple.spaces spans-displays -bool true
@@ -41,14 +40,14 @@ mac_settings() {
 
 # homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-$(command -v eval) "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Install post prerequisites
-$(command -v brew) install stow fish
+/opt/homebrew/bin/brew install stow fish
 
 # set fish as default shell
-$(command -v echo) /opt/homebrew/bin/fish | sudo tee -a /etc/shells
-$(command -v chsh) -s /opt/homebrew/bin/fish
+echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
+chsh -s /opt/homebrew/bin/fish
 
 fish <<'END'
   fish_add_path /opt/homebrew/bin /opt/homebrew/sbin
@@ -57,14 +56,14 @@ END
 mac_settings
 
 # Install brew stuff
-$(command -v brew) bundle install --file brew/Brewfile --verbose
+/opt/homebrew/bin/brew bundle install --file brew/Brewfile --verbose
 
 # Make some config directories
-$(command -v mkdir) -p "$HOME"/.docker/ "$HOME"/.tmux/ "$HOME"/.config/fish/ "$HOME"/.config/fastfetch "$HOME"/.config/mise
+mkdir -p "$HOME"/.docker/ "$HOME"/.tmux/ "$HOME"/.config/fish/ "$HOME"/.config/fastfetch "$HOME"/.config/mise
 
 # astronvim setup
 $(command -v git) clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
-$(command -v rm) -rf ~/.config/nvim/.git
+rm -rf ~/.config/nvim/.git
 
 # stow and git restore some items
 $(command -v stow) . --adopt
@@ -86,8 +85,7 @@ git clone -b v2.1.3 https://github.com/catppuccin/tmux.git ~/.config/tmux/plugin
 
 # Fisher
 fish <<'END'
-  curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish
-  source
+  curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source
   fisher install jorgebucaran/fisher
   fisher install PatrickF1/fzf.fish
   fzf_configure_bindings
