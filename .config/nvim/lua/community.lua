@@ -17,4 +17,5 @@ return {
   { import = "astrocommunity.pack.prettier" },
   { import = "astrocommunity.ai.opencode-nvim" },
   { import = "astrocommunity.pack.full-dadbod" },
+  { import = "astrocommunity.colorscheme.catppuccin" },
 }

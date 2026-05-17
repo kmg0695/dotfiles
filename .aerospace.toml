@@ -238,6 +238,10 @@ run = 'layout floating'
 if.app-id = 'com.apple.logic10'
 run = 'layout floating'
 
+[[on-window-detected]]
+if.app-id = 'com.chabomakers.Antinote'
+run = 'layout floating'
+
 # workspace assignments
 [workspace-to-monitor-force-assignment]
 1 = 'main'

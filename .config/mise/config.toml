@@ -1,6 +1,6 @@
 [tools]
-node = "lts"
 go = "latest"
+node = "lts"
 python = "latest"
 
 [settings]
